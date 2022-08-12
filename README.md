@@ -27,8 +27,9 @@ Users should be able to:
 
 ### Screenshot
 
-![mobile]()
-![deskktop]()
+![mobile](Capture112.png)
+![tablet](Capture113.png)
+![desktop](Capture111.png)
 
 ### Links
 
@@ -42,8 +43,6 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 
-
-
 ### What I learned
 
 How to fetch data using custom hooks in reactjs with Api 
@@ -52,8 +51,8 @@ How to use Context ,Reducers, and custom theme hook
 ## Author
 
 - Ibimina Hart
-- Frontend Mentor -(https://www.frontendmentor.io/profile/ibimina)
-
-
+- Frontend Mentor -[@ibimina](https://www.frontendmentor.io/profile/ibimina)
+- Twitter - [@ibiminaaH](https://www.twitter.com/ibiminaaH)
+- Linkedin - [@ibimina](https://www.linkedin.com/in/ibimina-hart/)
 
 
