@@ -22,11 +22,11 @@ setLoading(false)
 }
 fetchData();
 } catch (error) {
+     setLoading(false);
  if (error==="AbortError") {
     setError("Abort")
  } else {
     setError("couldn't fetch")
-    setLoading(false)
  }   
 
 }

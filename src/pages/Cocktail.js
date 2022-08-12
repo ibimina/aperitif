@@ -18,8 +18,8 @@ export default function Cocktail() {
   return (
     <div className={`container ${mode}`}>
       <ThemeSelector/>
-      {error && <p>error...</p>}
-      {loading && <p>Loading</p>}
+      {error && <p className="error">error...</p>}
+      {loading && <p className="loading">Loading</p>}
       {data && <Liquor data={data}/>}
      
     </div>

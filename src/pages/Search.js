@@ -8,7 +8,7 @@ import { useTheme } from "../hooks/useTheme";
 
 export default function Search() {
 
-//get the search input   
+//get the search input value from input element  
 const queryString = useLocation().search
 const queryParams = new URLSearchParams(queryString)
 const query = queryParams.get("q")
@@ -18,12 +18,11 @@ const { data, loading, error } = useFetch(url);
 
 const {mode}=useTheme()
 return (
-    <div className={ `container ${mode}`}>
-    {error && <p>error...</p>}
-      {loading && <p>Loading</p>}
-   <ThemeSelector/>
-      {data && <Liquor data={data}/>}
-     
-    </div>
-  )
+  <div className={`container ${mode}`}>
+    <ThemeSelector />
+    {error && <p className="error">error...</p>}
+    {loading && <p className="loading">Loading...</p>}
+    {data && <Liquor data={data} />}
+  </div>
+);
 }

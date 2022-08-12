@@ -1,4 +1,4 @@
-
+//router import
 import { Link } from "react-router-dom";
 
 //import hook
@@ -10,7 +10,7 @@ import SearchBar from "./SearchBar";
 export default function Navbar() {
 
   const { color } = useTheme()
-  // const [ee,setEe] =useState(color)
+
 
   return (
     <>

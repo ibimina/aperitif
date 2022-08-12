@@ -12,13 +12,13 @@ const {mode} = useTheme()
   }
 
   return (
-    <>
+    <div className="cocktail-wrap">
       {data.drinks.map((cocktail) => (
         <div key={cocktail.idDrink} className={`cocktail ${mode}`}>
           <div className="img-con">
             <img src={cocktail.strDrinkThumb} alt="beer images" />
           </div>
-          <h3 className="name ">
+          <h3 className={`name ${mode}`}>
             {" "}
             <span>Cocktail: </span> {cocktail.strDrink}
           </h3 >
@@ -29,9 +29,9 @@ const {mode} = useTheme()
             {" "}
             <span className="label">Category:</span> {cocktail.strCategory}
           </p>
-          <Link to={`/cocktails/${cocktail.idDrink}`} className="read">Read recipes</Link>
+          <Link to={`/cocktails/${cocktail.idDrink}`} className={`read ${mode}`}>Read recipes</Link>
         </div>
       ))}
-    </>
+    </div>
   );
 }

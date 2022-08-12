@@ -6,7 +6,7 @@ export default function SearchBar() {
  
   const handle = (e) => {
     e.preventDefault();
-    console.log(term);
+   setTerm("")
     navigate(`/search?q=${term}`);
   };
 
@@ -14,6 +14,7 @@ export default function SearchBar() {
     <form onSubmit={handle}>
       <input
         type="text"
+        placeholder="search for new reciepe"
         value={term}
         onChange={(e) => setTerm(e.target.value)}
         required

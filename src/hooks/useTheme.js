@@ -5,7 +5,7 @@ export function useTheme() {
 const context = useContext(ThemeContext)
 
 if (context === undefined) {
-    throw new Error("use context within the scope");
+    throw new Error("use context within defined context scope");
 }
 
   return context
