@@ -43,8 +43,8 @@ window.addEventListener("scroll",()=>{
       <BrowserRouter>
         <Navbar style={{ backgroundColor: color }} />
         {showBtn && (
-          <button className="scroll" onClick={srol}>
-            scroll
+          <button className="scroll bg" onClick={srol}>
+            <span className="sr-only">scroll up</span>
           </button>
         )}
 

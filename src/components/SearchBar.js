@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 export default function SearchBar() {
+
   const [term, setTerm] = useState("");
+  
   const navigate = useNavigate();
  
   const handle = (e) => {

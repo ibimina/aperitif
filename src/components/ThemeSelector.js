@@ -10,7 +10,7 @@ export default function ThemeSelector() {
   };
   return (
     <div className={`themebtn ${mode}`}>
-      <button className={`hea ${mode}`} onClick={toggle}></button>
+      <button className={`hea ${mode} bg`} onClick={toggle}></button>
 
       <div className="btn-wrap">
         {themeColors.map((color) => (
