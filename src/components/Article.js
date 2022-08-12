@@ -7,7 +7,7 @@ const {mode} = useTheme()
 
   const home = useNavigate()
   const goHome =()=>{
-    home(-1)
+    home("/")
   }
 
 
