@@ -44,30 +44,30 @@ const {mode} = useTheme()
             <div className="ingr-wrap">
               <p className="text">Ingredients:</p>
               <div className="spa">
-                <p className="left line">
+                <p className="left line weig">
                   {drink.strMeasure1} {drink.strIngredient1}
                 </p>
-                <p className="left line">
+                <p className="left line weig">
                   {drink.strMeasure2} {drink.strIngredient2}
                 </p>
-                <p className="left line">
+                <p className="left line weig">
                   {drink.strMeasure3} {drink.strIngredient3}
                 </p>
-                <p className="left line">
+                <p className="left line weig">
                   {drink.strMeasure4} {drink.strIngredient4}
                 </p>
-                <p className="left line">
+                <p className="left line weig">
                   {drink.strMeasure5} {drink.strIngredient5}
                 </p>
-                <p className="left line">
+                <p className="left line weig">
                   {drink.strMeasure6} {drink.strIngredient6}
                 </p>
-                <p className="left line">
+                <p className="left line weig">
                   {drink.strMeasure7} {drink.strIngredient7}
                 </p>
               </div>
             </div>
-            <p className="left ">
+            <p className="left weig">
               <span className="text rec-tit">Recipe:</span>{" "}
               {drink.strInstructions}
             </p>

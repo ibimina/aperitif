@@ -50,7 +50,6 @@ nav {
   padding: 1em;
   display: flex;
   justify-content: space-between;
-  background-color: hsl(240, 71%, 35%);
 }
 .title {
   color: hsl(0, 0%, 99%);
@@ -73,53 +72,50 @@ img,
 .text {
   color: hsl(330, 80%, 60%);
   font-weight: bolder;
-  font-size: 18px;
+  /* font-size: 18px; */
+   text-align: left;
 }
 .label {
-  color: hsl(0, 17%, 65%);
-  font-size: 16px;
+  color: hsl(0, 25%, 70%);
 }
-/* .liquor-wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
 .container {
   text-align: center;
   display: flex;
   flex-direction: column;
   padding: 1em 2em;
   min-height: 95vh;
-  background-color: hsl(348, 86%, 95%);
-}
-.text {
-  text-align: left;
+  background-image: url('./images/lightblue.jpg');
 }
 .cocktail {
-  background-color: hsl(35, 60%, 81%);
-  padding: 1em 1em 2em;
+  background-color: hsl(210, 100%, 100%);
+  padding: .7em .7em 2em .7em;
   border-radius: 10px;
   margin-bottom: 2em;
   max-width: 500px;
 }
 .art {
-  background-color: hsl(35, 60%, 81%);
+  background-color: hsl(210, 100%, 100%);
   border-radius: 10px;
   padding: 1em;
 }
+
+.weig{
+  font-weight: bold;
+   color: hsl(204, 63%, 29%);
+}
 .read {
   text-decoration: none;
-  border-radius: 15px;
+  border-radius:15px;
   margin: 2em;
-  background-color: hsl(240, 81%, 51%);
+  background-color: hsl(325, 94%, 56%);
   padding: 0.6em;
   border: 0;
-  color: hsl(240, 24%, 84%);
+  color: hsl(322, 66%, 94%);
 }
+
 .read.dark,
 .home.dark {
-  background-color: rgb(30, 30, 59);
+  background-color: hsl(320, 95%, 50%);
 }
 .error,
 .loading {
@@ -134,7 +130,6 @@ img,
   bottom: 1rem;
   height: 50px;
   width: 50px;
-
   border-radius: 50%;
   background-image: url("../src/images/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg");
   background-color: hsl(0, 18%, 93%);
@@ -166,11 +161,11 @@ input:active {
   background-image: url("../src/images/dark_mode_black_24dp.svg");
 }
 .container.dark {
-  background-color: hsl(347, 53%, 18%);
+  background-image: url("./images/darkblue.jpg");
 }
 .cocktail.dark,
 .art.dark {
-  background-color: hsl(34, 22%, 20%);
+  background-color: hsl(208, 78%, 7%);
 }
 .name.dark {
   color: hsl(0, 18%, 57%);
@@ -201,9 +196,9 @@ input:active {
   padding: 1em 2em;
   border-radius: 15px;
   border: 0;
-  background-color: hsl(240, 81%, 51%);
+   background-color: hsl(325, 94%, 56%);
   margin-top: 0.5em;
-  color: hsl(240, 24%, 84%);
+    color: hsl(322, 66%, 94%);
 }
 .line {
   line-height: 35px;

@@ -1,6 +1,6 @@
 import { useTheme } from "../hooks/useTheme";
 
-const themeColors = ["pink", "black", "goldenrod"];
+const themeColors = ["#760c4c", "black", "pink"];
 
 export default function ThemeSelector() {
   const { changeColor,mode,changeMode } = useTheme();

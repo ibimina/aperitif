@@ -16,7 +16,7 @@ export default function Cocktail() {
       
   const {mode}= useTheme()
   return (
-    <div className={`container ${mode}`}>
+    <div className={`container ${mode} bg`}>
       <ThemeSelector/>
       {error && <p className="error">error...</p>}
       {loading && <p className="loading">Loading</p>}

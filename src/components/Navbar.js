@@ -14,15 +14,15 @@ export default function Navbar() {
 
   return (
     <>
-      <nav style={{backgroundColor:color}}>
+      <nav style={{ backgroundColor: color }}>
         <h1>
           {" "}
           <Link to="/" className="title">
-            Liquor Bomb
+            Apéritif
           </Link>
         </h1>
-      
-        <SearchBar/>
+
+        <SearchBar />
       </nav>
     </>
   );
