@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/cocktail-recipes/static/css/main.1fa45d6d.css",
-    "main.js": "/cocktail-recipes/static/js/main.b1cbe1bc.js",
+    "main.css": "/cocktail-recipes/static/css/main.0823550b.css",
+    "main.js": "/cocktail-recipes/static/js/main.eeba60b1.js",
     "static/media/darkblue.jpg": "/cocktail-recipes/static/media/darkblue.88dcef2bc38119a57e82.jpg",
     "static/media/lightblue.jpg": "/cocktail-recipes/static/media/lightblue.b245593fbcd4339dbd3e.jpg",
     "index.html": "/cocktail-recipes/index.html",
     "static/media/dark_mode_FILL0_wght400_GRAD0_opsz48.svg": "/cocktail-recipes/static/media/dark_mode_FILL0_wght400_GRAD0_opsz48.aa6c6779dba8ca8f25ba.svg",
     "static/media/dark_mode_black_24dp.svg": "/cocktail-recipes/static/media/dark_mode_black_24dp.0ea24a4624ebf7208870.svg",
     "static/media/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg": "/cocktail-recipes/static/media/arrow_upward_FILL0_wght400_GRAD0_opsz48.1edc6ffebaf7e649a02a.svg",
-    "main.1fa45d6d.css.map": "/cocktail-recipes/static/css/main.1fa45d6d.css.map",
-    "main.b1cbe1bc.js.map": "/cocktail-recipes/static/js/main.b1cbe1bc.js.map"
+    "main.0823550b.css.map": "/cocktail-recipes/static/css/main.0823550b.css.map",
+    "main.eeba60b1.js.map": "/cocktail-recipes/static/js/main.eeba60b1.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fa45d6d.css",
-    "static/js/main.b1cbe1bc.js"
+    "static/css/main.0823550b.css",
+    "static/js/main.eeba60b1.js"
   ]
 }
