@@ -16,6 +16,7 @@ export default function Receipes() {
   const nav = useNavigate();
   const url = "https://www.thecocktaildb.com/api/json/v1/1//lookup.php?i=" + id;
   const { data, loading, error } = useFetch(url);
+
 const {mode} = useTheme()
 
   useEffect(() => {
@@ -27,11 +28,11 @@ const {mode} = useTheme()
   }, [error,nav]);
 
   return (
-    <div className={`container ${mode}`}>
+    <div className={`container ${mode} bg`}>
       <ThemeSelector/>
       {error && <p className="eror">error...</p>}
       {loading && <p className="loading">Loading</p>}
-      {data && <Article recipes={data} />}
+      {data && <Article recipes={data.drinks} />}
     </div>
   );
 }

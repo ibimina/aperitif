@@ -226,10 +226,7 @@ input:active {
     justify-content: center;
     align-items: center;
   }
-  .spa {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
+ 
   .col {
     width: 950px;
   }
@@ -253,11 +250,11 @@ input:active {
   .title:hover {
     color: hsl(35, 28%, 59%);
   }
-  .read:hover {
+  .read:hover,.home:hover  {
     background-color: hsl(0, 0%, 11%);
     transition: ease-in-out 1s;
   }
-  .read.dark:hover {
+  .read.dark:hover,.home.dark:hover {
     background-color: rgb(30, 30, 59);
   }
   .cocktail-wrap {

@@ -18,7 +18,7 @@ const { data, loading, error } = useFetch(url);
 
 const {mode}=useTheme()
 return (
-  <div className={`container ${mode}`}>
+  <div className={`container ${mode} bg`}>
     <ThemeSelector />
     {error && <p className="error">error...</p>}
     {loading && <p className="loading">Loading...</p>}

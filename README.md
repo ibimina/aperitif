@@ -45,9 +45,9 @@ Users should be able to:
 
 ### What I learned
 
-How to fetch data using custom hooks in reactjs with Api 
-How to use Context ,Reducers, and custom theme hook
-
+- How to fetch data using custom hooks in reactjs with Api 
+- How to use Context ,Reducers, and custom theme hook
+- How to create an array with the given API data
 ## Author
 
 - Ibimina Hart

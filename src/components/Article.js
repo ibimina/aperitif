@@ -3,17 +3,36 @@ import { useTheme } from "../hooks/useTheme";
 
 
 export default function Article({recipes}) {
+
 const {mode} = useTheme()
 
   const home = useNavigate()
   const goHome =()=>{
     home("/")
   }
-
-
+     const ingredientsAndMeasures = [];
+     function getIngredientsMeasurements() {
+       const [drink] = recipes;
+      //  console.log(drink["idDrink"]);
+        let i = 1;
+        while (drink["strIngredient" + i]) {
+          const ingredientUsed = drink["strMeasure" + i];
+          // console.log(ingredientUsed);
+          const ingredientMeasurement = drink["strIngredient" + i];
+        
+          ingredientsAndMeasures.push(ingredientUsed + " " + ingredientMeasurement);
+          i++;
+          //  console.log(ingredientsAndMeasures);
+        }
+   
+        return ingredientsAndMeasures;
+     }
+    
+     getIngredientsMeasurements();
+      
   return (
     <div className={`article-wrap ${mode}`}>
-      {recipes.drinks.map((drink) => (
+      {recipes.map((drink) => (
         <div key={drink.idDrink} className={`art ${mode} flex`}>
           <div className="art-img item">
             <img src={drink.strDrinkThumb} alt="beer images" />
@@ -44,27 +63,12 @@ const {mode} = useTheme()
             <div className="ingr-wrap">
               <p className="text">Ingredients:</p>
               <div className="spa">
-                <p className="left line weig">
-                  {drink.strMeasure1} {drink.strIngredient1}
-                </p>
-                <p className="left line weig">
-                  {drink.strMeasure2} {drink.strIngredient2}
-                </p>
-                <p className="left line weig">
-                  {drink.strMeasure3} {drink.strIngredient3}
-                </p>
-                <p className="left line weig">
-                  {drink.strMeasure4} {drink.strIngredient4}
-                </p>
-                <p className="left line weig">
-                  {drink.strMeasure5} {drink.strIngredient5}
-                </p>
-                <p className="left line weig">
-                  {drink.strMeasure6} {drink.strIngredient6}
-                </p>
-                <p className="left line weig">
-                  {drink.strMeasure7} {drink.strIngredient7}
-                </p>
+                {ingredientsAndMeasures.map((ingr) => (
+                  <li className="left line weig">
+                   {ingr}
+                  </li>
+                ))}
+           
               </div>
             </div>
             <p className="left weig">
