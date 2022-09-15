@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:(https://github.com/ibimina/apéritif )
-- Live Site URL: (https://ibimina.github.io/apéritif /)
+- Solution URL:(https://github.com/ibimina/aperitif )
+- Live Site URL: (https://ibimina.github.io/aperitif/)
 
 ### Built with
 
