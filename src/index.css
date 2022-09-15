@@ -88,14 +88,14 @@ img,
   background-image: url("./images/lightblue.jpg");
 }
 .cocktail {
-  background-color: hsl(210, 100%, 100%);
+  background-color: rgb(218, 201, 201);
   padding: 0.7em 0.7em 2em 0.7em;
   border-radius: 10px;
   margin-bottom: 2em;
   max-width: 500px;
 }
 .art {
-  background-color: hsl(210, 100%, 100%);
+  background-color: rgb(243, 239, 239);
   border-radius: 10px;
   padding: 1em;
 }
@@ -114,7 +114,8 @@ img,
   color: hsl(322, 66%, 94%);
 }
 
-.read.dark,.home.dark {
+.read.dark,
+.home.dark {
   background-color: hsl(320, 95%, 50%);
 }
 .error,
@@ -160,18 +161,39 @@ input:active {
 .hea.dark {
   background-image: url("../src/images/dark_mode_black_24dp.svg");
 }
+.hea.dark:hover {
+  background-color: hsl(213, 75%, 44%);
+}
+.hea:hover {
+  border: 1px solid;
+  background-color: hsl(213, 17%, 10%);
+}
 .container.dark {
   background-image: url("./images/darkblue.jpg");
 }
 .cocktail.dark,
 .art.dark {
   /* background-color: #050b0f; */
-  background-color: #fffbfb;
+  background-color: #ece5e5;
 }
-.arrow.dark{
+.arrow {
+  border: 0;
+  background-image: url("../public/icon-previous.svg");
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  margin-bottom: 2em;
+  cursor: pointer;
+}
+.arrow:hover {
+  filter: brightness(500);
+}
+.arrow.dark {
   filter: brightness(1000);
 }
-
+.arrow.dark:hover {
+  filter: brightness(1);
+}
 .name.dark {
   color: hsl(0, 18%, 57%);
 }
@@ -190,7 +212,10 @@ input:active {
   height: 20px;
   border-radius: 50%;
 }
-
+.btn:hover{
+  box-shadow: 3px 3px 2px rgba(0,0,0,0.5);
+  border: 2px solid hsl(0, 1%, 45%);
+}
 .ingr-wrap {
   margin: 1em 0;
 }
@@ -198,23 +223,15 @@ input:active {
   text-align: left;
 }
 .home {
- 
-   padding: 1em 2em;
+  padding: 1em 2em;
   border-radius: 15px;
   border: 0;
-   background-color: hsl(325, 94%, 56%);
+  background-color: hsl(325, 94%, 56%);
   margin-top: 0.5em;
-    color: hsl(322, 66%, 94%);
+  color: hsl(322, 66%, 94%);
   cursor: pointer;
 }
-.arrow{
-    border: 0;
-  background-image: url("../public/icon-previous.svg");
-  width: 15px;
-  height: 15px;
-  background-color: transparent;
-  margin-bottom: 2em;
-}
+
 .line {
   line-height: 35px;
 }
