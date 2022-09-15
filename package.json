@@ -1,6 +1,6 @@
 {
-  "homepage": "https://ibimina.github.io/cocktail-recipes",
-  "name": "cocktail-recipes",
+  "homepage": "https://ibimina.github.io/apéritif",
+  "name": "aperitif",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

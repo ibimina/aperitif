@@ -36,6 +36,7 @@ picture {
   overflow: hidden;
   padding: 0;
   border: 0;
+  top: 0;
 }
 
 body,
@@ -73,7 +74,7 @@ img,
   color: hsl(330, 80%, 60%);
   font-weight: bolder;
   /* font-size: 18px; */
-   text-align: left;
+  text-align: left;
 }
 .label {
   color: hsl(0, 25%, 70%);
@@ -84,11 +85,11 @@ img,
   flex-direction: column;
   padding: 1em 2em;
   min-height: 95vh;
-  background-image: url('./images/lightblue.jpg');
+  background-image: url("./images/lightblue.jpg");
 }
 .cocktail {
   background-color: hsl(210, 100%, 100%);
-  padding: .7em .7em 2em .7em;
+  padding: 0.7em 0.7em 2em 0.7em;
   border-radius: 10px;
   margin-bottom: 2em;
   max-width: 500px;
@@ -99,13 +100,13 @@ img,
   padding: 1em;
 }
 
-.weig{
+.weig {
   font-weight: bold;
-   color: hsl(204, 63%, 29%);
+  color: hsl(204, 63%, 29%);
 }
 .read {
   text-decoration: none;
-  border-radius:15px;
+  border-radius: 15px;
   margin: 2em;
   background-color: hsl(325, 94%, 56%);
   padding: 0.6em;
@@ -113,8 +114,7 @@ img,
   color: hsl(322, 66%, 94%);
 }
 
-.read.dark,
-.home.dark {
+.read.dark,.home.dark {
   background-color: hsl(320, 95%, 50%);
 }
 .error,
@@ -138,7 +138,7 @@ img,
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-    border: 0;
+  border: 0;
 }
 .hea {
   background-image: url("../src/images/dark_mode_FILL0_wght400_GRAD0_opsz48.svg");
@@ -150,7 +150,7 @@ img,
 input {
   border-radius: 10px;
   border: 0;
-  padding: 0.5em 0;
+  padding: 0.7em 1em;
   text-align: center;
 }
 input:focus-within,
@@ -165,8 +165,13 @@ input:active {
 }
 .cocktail.dark,
 .art.dark {
-  background-color: hsl(208, 78%, 7%);
+  /* background-color: #050b0f; */
+  background-color: #fffbfb;
 }
+.arrow.dark{
+  filter: brightness(1000);
+}
+
 .name.dark {
   color: hsl(0, 18%, 57%);
 }
@@ -193,12 +198,22 @@ input:active {
   text-align: left;
 }
 .home {
-  padding: 1em 2em;
+ 
+   padding: 1em 2em;
   border-radius: 15px;
   border: 0;
    background-color: hsl(325, 94%, 56%);
   margin-top: 0.5em;
     color: hsl(322, 66%, 94%);
+  cursor: pointer;
+}
+.arrow{
+    border: 0;
+  background-image: url("../public/icon-previous.svg");
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  margin-bottom: 2em;
 }
 .line {
   line-height: 35px;
@@ -226,7 +241,7 @@ input:active {
     justify-content: center;
     align-items: center;
   }
- 
+
   .col {
     width: 950px;
   }
@@ -250,11 +265,13 @@ input:active {
   .title:hover {
     color: hsl(35, 28%, 59%);
   }
-  .read:hover,.home:hover  {
+  .read:hover,
+  .home:hover {
     background-color: hsl(0, 0%, 11%);
     transition: ease-in-out 1s;
   }
-  .read.dark:hover,.home.dark:hover {
+  .read.dark:hover,
+  .home.dark:hover {
     background-color: rgb(30, 30, 59);
   }
   .cocktail-wrap {

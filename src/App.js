@@ -16,7 +16,6 @@ import Receipes from "./pages/Receipes";
 import Search from "./pages/Search";
 import Navbar from "./components/Navbar";
 
-
 function App() {
 
 const {color}= useTheme()
